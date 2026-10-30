@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bakso Sopo Yono | Bakso Enak & Tradisional</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hijau: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        }
+                    },
+                    fontFamily: {
+                        klasik: ['Georgia', 'Times New Roman', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-klasik">
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+<header class="bg-white border-b-2 border-hijau-700 shadow-sm sticky top-0 z-50">
+
+    <nav class="max-w-7xl mx-auto px-6 py-4">
+
+        <div class="flex items-center justify-between">
+
+            <!-- LOGO -->
+            <a href="#home" class="flex items-center gap-3">
+
+                <div class="w-12 h-12 rounded-full
+                            bg-hijau-700 text-white
+                            flex items-center justify-center
+                            text-2xl font-bold
+                            border-4 border-hijau-200">
+                    B
+                </div>
+
+                <div>
+                    <h1 class="text-xl font-bold text-hijau-900">
+                        Bakso Sopo Yono
+                    </h1>
+
+                    <p class="text-xs text-gray-500 tracking-widest">
+                        RASA TRADISIONAL
+                    </p>
+                </div>
+
+            </a>
+
+
+            <!-- MENU DESKTOP -->
+            <div class="hidden md:flex items-center gap-8">
+
+                <a href="#home"
+                   class="font-semibold hover:text-hijau-700">
+                    Beranda
+                </a>
+
+                <a href="#tentang"
+                   class="font-semibold hover:text-hijau-700">
+                    Tentang
+                </a>
+
+                <a href="#menu"
+                   class="font-semibold hover:text-hijau-700">
+                    Menu
+                </a>
+
+                <a href="#kontak"
+                   class="font-semibold hover:text-hijau-700">
+                    Kontak
+                </a>
+
+            </div>
+
+
+            <!-- LOGIN -->
+            <a href="#login"
+               class="hidden md:block
+                      bg-hijau-700 hover:bg-hijau-800
+                      text-white px-6 py-2.5
+                      rounded-md font-bold
+                      transition">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section id="home"
+         class="bg-hijau-50 min-h-[650px]
+                flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6 py-20 w-full">
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- TEXT -->
+            <div>
+
+                <p class="text-hijau-700 font-bold
+                          uppercase tracking-[0.3em]
+                          text-sm mb-5">
+                    Selamat Datang
+                </p>
+
+                <h2 class="text-5xl md:text-6xl
+                           font-bold text-hijau-900
+                           leading-tight mb-6">
+
+                    Bakso Enak,
+                    <span class="text-hijau-700">
+                        Rasa Juara!
+                    </span>
+
+                </h2>
+
+                <p class="text-lg text-gray-600
+                          leading-relaxed mb-8">
+
+                    Nikmati semangkuk bakso hangat dengan
+                    bakso kenyal, kuah gurih, dan bahan
+                    pilihan dari Bakso Sopo Yono.
+
+                </p>
+
+
+                <!-- BUTTON -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <a href="#menu"
+                       class="bg-hijau-700 hover:bg-hijau-800
+                              text-white text-center
+                              px-8 py-4 rounded-md
+                              font-bold shadow-md
+                              transition">
+
+                        Lihat Menu
+
+                    </a>
+
+                    <a href="#kontak"
+                       class="bg-white hover:bg-hijau-100
+                              text-hijau-800
+                              border-2 border-hijau-700
+                              text-center
+                              px-8 py-4 rounded-md
+                              font-bold transition">
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO IMAGE / ILLUSTRATION -->
+            <div class="flex justify-center">
+
+                <div class="relative">
+
+                    <div class="absolute inset-0
+                                bg-hijau-200
+                                rounded-full scale-90">
+                    </div>
+
+                    <div class="relative
+                                w-72 h-72 md:w-96 md:h-96
+                                bg-white rounded-full
+                                border-8 border-hijau-700
+                                shadow-xl
+                                flex flex-col
+                                items-center justify-center">
+
+                        <div class="text-8xl mb-4">
+                            🍲
+                        </div>
+
+                        <h3 class="text-3xl font-bold
+                                   text-hijau-800">
+                            BAKSO
+                        </h3>
+
+                        <p class="text-sm tracking-[0.3em]
+                                  text-gray-500">
+                            SOPO YONO
+                        </p>
+
+                    </div>
+
+                    <div class="absolute -bottom-3 -right-3
+                                w-24 h-24
+                                rounded-full
+                                bg-hijau-700
+                                border-4 border-white
+                                shadow-lg
+                                text-white
+                                flex items-center
+                                justify-center
+                                text-center
+                                text-sm font-bold">
+
+                        ENAK<br>
+                        &<br>
+                        HANGAT
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TENTANG
+===================================================== -->
+<section id="tentang" class="py-20 bg-white">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <p class="text-hijau-700 font-bold
+                  uppercase tracking-widest mb-3">
+            Tentang Kami
+        </p>
+
+        <h2 class="text-4xl font-bold
+                   text-hijau-900 mb-6">
+            Cita Rasa Bakso Tradisional
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed">
+            Bakso Sopo Yono hadir dengan semangat menyajikan
+            bakso yang lezat dan berkualitas. Kami menggunakan
+            bahan pilihan dan resep khas untuk menghadirkan
+            rasa bakso yang nikmat di setiap mangkuk.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MENU MAKANAN
+===================================================== -->
+<section id="menu"
+         class="py-20 bg-hijau-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- TITLE -->
+        <div class="text-center mb-14">
+
+            <p class="text-hijau-700 font-bold
+                      uppercase tracking-widest mb-3">
+                Daftar Menu
+            </p>
+
+            <h2 class="text-4xl md:text-5xl
+                       font-bold text-hijau-900">
+                Menu Bakso Sopo Yono
+            </h2>
+
+            <p class="text-gray-600 mt-4">
+                Pilih menu favoritmu dan nikmati
+                kelezatannya.
+            </p>
+
+        </div>
+
+
+        <!-- MENU GRID -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3
+                    gap-8">
+
+
+            <!-- MENU 1 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🍲
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Bakso Biasa
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp15.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Bakso kenyal dengan kuah kaldu
+                        gurih, mie, tahu, dan sayuran.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU 2 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🍜
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Bakso Urat
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp18.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Bakso urat dengan tekstur khas,
+                        kuah gurih dan pelengkap segar.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU 3 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🥣
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Bakso Komplit
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp22.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Bakso, urat, tahu, mie, sayuran,
+                        dan pelengkap lengkap.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU 4 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🍝
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Mie Bakso
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp17.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Mie kenyal dengan bakso pilihan
+                        dan kuah kaldu yang gurih.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU 5 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🥟
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Bakso Tahu
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp16.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Bakso lembut dengan tahu gurih
+                        dan kuah kaldu hangat.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENU 6 -->
+            <div class="bg-white rounded-xl
+                        overflow-hidden
+                        border-2 border-hijau-200
+                        shadow-sm hover:shadow-xl
+                        transition duration-300">
+
+                <div class="h-48 bg-hijau-100
+                            flex items-center
+                            justify-center text-8xl">
+                    🍚
+                </div>
+
+                <div class="p-6">
+
+                    <div class="flex justify-between
+                                items-start gap-3">
+
+                        <h3 class="text-2xl font-bold
+                                   text-hijau-900">
+                            Nasi Bakso
+                        </h3>
+
+                        <span class="text-hijau-700
+                                     font-bold whitespace-nowrap">
+                            Rp20.000
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Nasi hangat dengan bakso dan
+                        kuah gurih khas Sopo Yono.
+                    </p>
+
+                    <button
+                        class="w-full bg-hijau-700
+                               hover:bg-hijau-800
+                               text-white py-3
+                               rounded-md font-bold">
+                        Pesan Sekarang
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROMO
+===================================================== -->
+<section class="bg-hijau-800 py-16">
+
+    <div class="max-w-5xl mx-auto
+                text-center px-6 text-white">
+
+        <p class="text-hijau-200
+                  uppercase tracking-widest
+                  font-bold mb-3">
+            Promo Hari Ini
+        </p>
+
+        <h2 class="text-4xl font-bold mb-4">
+            Bakso Enak, Harga Bersahabat!
+        </h2>
+
+        <p class="text-hijau-100 mb-8">
+            Ajak keluarga dan teman menikmati
+            bakso favorit bersama.
+        </p>
+
+        <a href="#menu"
+           class="inline-block
+                  bg-white text-hijau-800
+                  hover:bg-hijau-100
+                  px-8 py-3
+                  rounded-md
+                  font-bold transition">
+            Lihat Semua Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     KONTAK
+===================================================== -->
+<section id="kontak" class="py-20 bg-white">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-10">
+
+            <p class="text-hijau-700 font-bold
+                      uppercase tracking-widest">
+                Hubungi Kami
+            </p>
+
+            <h2 class="text-4xl font-bold
+                       text-hijau-900 mt-2">
+                Yuk, Mampir!
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="text-center p-6
+                        border-2 border-hijau-200
+                        rounded-lg">
+
+                <div class="text-3xl mb-3">📍</div>
+
+                <h3 class="font-bold text-lg
+                           text-hijau-900">
+                    Lokasi
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Indonesia
+                </p>
+
+            </div>
+
+
+            <div class="text-center p-6
+                        border-2 border-hijau-200
+                        rounded-lg">
+
+                <div class="text-3xl mb-3">📞</div>
+
+                <h3 class="font-bold text-lg
+                           text-hijau-900">
+                    Telepon
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    08xx-xxxx-xxxx
+                </p>
+
+            </div>
+
+
+            <div class="text-center p-6
+                        border-2 border-hijau-200
+                        rounded-lg">
+
+                <div class="text-3xl mb-3">⏰</div>
+
+                <h3 class="font-bold text-lg
+                           text-hijau-900">
+                    Jam Buka
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    10.00 - 22.00 WIB
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="bg-hijau-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    Bakso Sopo Yono
+                </h3>
+
+                <p class="text-hijau-200 leading-relaxed">
+                    Bakso tradisional dengan cita rasa
+                    yang lezat, hangat, dan nikmat.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg mb-4">
+                    Menu
+                </h3>
+
+                <div class="space-y-2
+                            text-hijau-200">
+
+                    <a href="#menu"
+                       class="block hover:text-white">
+                        Bakso Biasa
+                    </a>
+
+                    <a href="#menu"
+                       class="block hover:text-white">
+                        Bakso Urat
+                    </a>
+
+                    <a href="#menu"
+                       class="block hover:text-white">
+                        Bakso Komplit
+                    </a>
+
+                    <a href="#menu"
+                       class="block hover:text-white">
+                        Mie Bakso
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg mb-4">
+                    Sosial Media
+                </h3>
+
+                <div class="flex gap-3">
+
+                    <a href="#"
+                       class="w-10 h-10
+                              bg-hijau-700
+                              hover:bg-hijau-600
+                              rounded-full
+                              flex items-center
+                              justify-center">
+                        IG
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10
+                              bg-hijau-700
+                              hover:bg-hijau-600
+                              rounded-full
+                              flex items-center
+                              justify-center">
+                        FB
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10
+                              bg-hijau-700
+                              hover:bg-hijau-600
+                              rounded-full
+                              flex items-center
+                              justify-center">
+                        WA
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-hijau-700
+                    mt-10 pt-6 text-center
+                    text-sm text-hijau-300">
+
+            © 2026 Bakso Sopo Yono.
+            Semua Hak Dilindungi.
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
